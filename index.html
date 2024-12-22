@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Multistream Tools by SeenWonderAlex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <span style="font-size: 30px;">Multistream Tools</span>
+    <br>
+    <div>
+        <a style="color: white;">Combined Twitch & YouTube Polls</a><br>
+        <hr>
+        <a id="PollLink" href="/multistream-tools/polling.html">Visit Page</a><br>
+        <a onclick="Popout('PollLink')" href="#popup">Popout as a Window</a>
+    </div>
+    <br>
+    <div>
+        <a style="color: white;">Monitor Twitch Channel Point Redemptions</a><br>
+        <hr>
+        <a id="PollLink2" href="/multistream-tools/ttv-redemptions.html">Visit Page</a><br>
+        <a onclick="Popout('PollLink2')" href="#popup">Popout as a Window</a>
+    </div>
+    <script type="text/javascript">
+        function Popout(ID) {
+            window.open(document.getElementById(ID).href, "_blank", "popup=yes");
+        }
+        location.href = '/multistream-tools';
+    </script>
+    <div class="footer">
+        <p style="background: none;">Developed by © SeenWonderAlex <a href="./privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+
+</html>
